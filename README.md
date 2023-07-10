@@ -2,7 +2,7 @@
 
 # Melody Master
 
-![img](http://raw.github.com/ShanonName/MelodyMaster/MelodyMaster.png)
+![img](https://github.com/ShanonName/MelodyMaster/blob/main/MelodyMaster.png?raw=true)
 
 **Melody Master** Descarga y organiza canciones de la manera mas eficiente posible.
 
@@ -16,6 +16,8 @@
 ## Descripcion
 
 Melody Master es una herramienta de línea de comandos diseñada para descargar y organizar automáticamente canciones desde Spotify. También permite buscar canciones, álbumes o listas de reproducción y descargar sus imágenes asociadas.
+
+> Programa solo funcional para systemas basados en `unix` proximamente en windows
 
 ## Requisitos previos
 

@@ -7,7 +7,7 @@ function handle_sigint() {
 }
 
 checkVersion() {
-    ver=$(curl -s https://raw.github.com/ShanonName/MelodyMaster/version.txt)
+    ver=$(curl -s https://raw.githubusercontent.com/ShanonName/MelodyMaster/main/version.txt)
     if [[ "$ver" == "$version" ]]; then
         cv="$GREEN"
         return 0
