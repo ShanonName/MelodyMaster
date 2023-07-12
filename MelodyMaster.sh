@@ -50,7 +50,7 @@ main() {
         fi
 
         # Define el directorio donde ira la musica y lo crea si no existe
-        path="${spath}/albums/${artist}/${album}"
+        path="${spath}/albums/${artist}/${name}"
         if [[ "$type" == "playlist" ]]; then
             path="${spath}/playlists/${name}"
         fi
@@ -64,7 +64,7 @@ main() {
         fi
         
         # Descargamos el banner del album/cancion/playlist yk
-        download_banner "$imgurl" "${path}/${album}.png"
+        download_banner "$imgurl" "${path}/${name}.png"
     done
 }
 
@@ -217,7 +217,7 @@ get_spotify_info() {
     imgurl=$(jq -r "${pattern}.images[0].url" <<< "$response")
     album=$(jq -r "${pattern}.album.name" <<< "$reponse")
 
-    if [[ "$album" == "null" ]]; then
+    if [[ "$album" == "null" || "$album" == "" ]]; then
         album="$name"
     fi
 }
